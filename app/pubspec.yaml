@@ -1,0 +1,27 @@
+name: agent_migration_poc
+description: >
+  Proof of concept for mid-task state migration between devices over a local
+  socket (WiFi LAN), with a simulated in-flight tool call, idempotency-key
+  checking, and a two-phase acknowledgment handoff. No internet, no cloud,
+  no account system anywhere in the loop.
+publish_to: "none"
+version: 0.1.0
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  uuid: ^4.4.0
+  http: ^1.2.0
+  flutter_gemma: ^1.0.0
+  flutter_gemma_mediapipe: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true

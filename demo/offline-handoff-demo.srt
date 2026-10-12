@@ -1,0 +1,33 @@
+1
+00:00:00,000 --> 00:00:08,000
+A phone is running a 7-step AI task.
+A laptop on the same Wi-Fi is waiting.
+
+2
+00:00:08,000 --> 00:00:20,000
+Handoff while step 3 is running.
+The phone lets go only after the laptop confirms it saved the task.
+
+3
+00:00:20,000 --> 00:00:24,500
+The laptop re-runs step 3 under the SAME key,
+so nothing is skipped.
+
+4
+00:00:24,500 --> 00:00:33,500
+The phone's own copy of step 3 finishes late and is sent over.
+The laptop compares: the answers differ, so it flags it and stores both.
+
+5
+00:00:33,500 --> 00:00:39,833
+Steps 4 to 7 run on the laptop (sped up).
+
+6
+00:00:39,833 --> 00:00:48,833
+The finished result comes back to the phone.
+
+7
+00:00:48,833 --> 00:00:51,833
+Proof of concept: two devices, offline, no server.
+At-least-once, not exactly-once.
+
